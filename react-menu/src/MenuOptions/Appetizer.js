@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { Card } from 'reactstrap';
 const Appetizer = props => {
   const [appz, appzSet] = useState({
-    appetizers: ['Chicharon Bulaklak', 'Fish & Squid Balls', 'Lumpiang Shanghai'],
     showList: false
   })
 
   const clickHandler = (e) => {
+    const doesShow = appz.showList;
     appzSet({
-      appetizers: ['Chicharon Bulaklak', 'Fish & Squid Balls', 'Lumpiang Shanghai'], showList: true
+      appetizers: ['Chicharon Bulaklak', 'Fish & Squid Balls', 'Lumpiang Shanghai'], showList: !doesShow
     })
   }
 
@@ -17,7 +17,7 @@ const Appetizer = props => {
       <div className='card-header'>
         <h1>{props.title}</h1>
       </div>
-      <div className="card-body p-2">
+      <div className="card-body p-2 text-left">
         {
           appz.showList ?
             <ul>
