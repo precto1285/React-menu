@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Column } from 'reactstrap';
+import { Row, Col, Jumbotron } from 'reactstrap';
 import './App.css';
 import Appetizer from './MenuOptions/Appetizer';
 import Dessert from './MenuOptions/Dessert';
@@ -7,36 +7,40 @@ import Drinks from './MenuOptions/Drinks';
 import Entree from './MenuOptions/Entree';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      title: ['Appetizer Menu', 'Dessert Menu', 'Drinks Menu', 'Entrees Menu']
+    }
+  }
   render() {
     return (
       <div className="App">
         <div className="container">
           <Row>
-            <Column>
-              <h1 className="text-center text-danger">
-                The Menu
-          </h1>
-            </Column>
+            <Col>
+              <Jumbotron className="bg-danger">
+                <h1 className="text-center text-white">
+                  The Menu
+                </h1>
+              </Jumbotron>
+            </Col>
           </Row>
           <Row>
-            <Column>
-              <p>Drinks</p>
-              <Drinks />
-            </Column>
-            <Column>
-              <p>Appetizers</p>
-              <Appetizer />
-            </Column>
+            <Col className="col-md-6 text-center text-primary">
+              <Drinks title={this.state.title[2]} />
+            </Col>
+            <Col className="col-md-6 text-center text-primary">
+              <Appetizer title={this.state.title[0]} />
+            </Col>
           </Row>
           <Row>
-            <Column>
-              <p>Entree</p>
-              <Entree />
-            </Column>
-            <Column>
-              <p>Dessert</p>
-              <Dessert />
-            </Column>
+            <Col className="col-md-6 text-center text-warning">
+              <Entree title={this.state.title[3]} />
+            </Col>
+            <Col className="col-md-6 text-center text-warning">
+              <Dessert title={this.state.title[1]} />
+            </Col>
           </Row>
         </div>
       </div>

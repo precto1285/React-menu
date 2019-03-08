@@ -2,7 +2,9 @@ import React from 'react';
 
 const Dessert = props => {
   return (
-    <h1>Dessert</h1>
+    <div className='card my-5'>
+      <h1>{props.title}</h1>
+    </div>
   )
 }
 
