@@ -1,8 +1,11 @@
 import React from 'react';
+import imageChc from './../../Images/chxblk.jpg';
 
 const Appetizer1 = props => {
   return (
-    <p>Image Here</p>
+    <div>
+      <img src={imageChc} alt="chich" />
+    </div>
   )
 }
 
