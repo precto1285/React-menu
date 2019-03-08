@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Card } from 'reactstrap';
+import { Card, Row, Col } from 'reactstrap';
+import Drinks1 from './../FoodImgComps/Drinks1';
 
 const Drinks = props => {
 
@@ -16,23 +17,28 @@ const Drinks = props => {
     }
 
   return (
-    <Card className="my-5">
-      <div className="card-header"><h1>{props.title}</h1></div>
-      <div className="card-body text-left text-dark">
-        {
-          drnkz.showDrinks ?
-            <ul>
-              <li>{drnkz.drinks[0]}</li>
-              <li>{drnkz.drinks[1]}</li>
-              <li>{drnkz.drinks[2]}</li>
-            </ul>
-            : null
-        }
-      </div>
-      <div className="card-footer">
-        <button onClick={clickHandler} className="btn btn-primary">Show</button>
-      </div>
-    </Card>
+    <Row>
+      <Col>
+        <Card className="my-5">
+          <div className="card-header"><h1>{props.title}</h1></div>
+          <div className="card-body text-left text-dark">
+            {
+              drnkz.showDrinks ?
+                <ul>
+                  <li>{drnkz.drinks[0]}</li>
+                  <li>{drnkz.drinks[1]}</li>
+                  <li>{drnkz.drinks[2]}</li>
+                </ul>
+                : null
+            }
+          </div>
+          <div className="card-footer">
+            <button onClick={clickHandler} className="btn btn-primary">Show</button>
+          </div>
+        </Card>
+      </Col>
+      <Col><Drinks1 /></Col>
+    </Row>
   )
 }
 
