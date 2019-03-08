@@ -1,9 +1,10 @@
 
 import React from 'react';
+import Kaldereta from './../../Images/bfkldrt.jpg';
 
 const Entree3 = props => {
   return (
-    <p>Image Here</p>
+    <img className="d-block w-100" src={Kaldereta} alt='kaldereta' />
   )
 }
 

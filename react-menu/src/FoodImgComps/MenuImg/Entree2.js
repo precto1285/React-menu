@@ -1,8 +1,9 @@
 import React from 'react';
+import Pata from './../../Images/crppta.jpg';
 
 const Entree2 = props => {
   return (
-    <p>Image Here</p>
+    <img className="d-block w-100" src={Pata} alt="pata" />
   )
 }
 

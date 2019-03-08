@@ -1,8 +1,9 @@
 import React from 'react';
+import Adobo from './../../Images/adobo.jpg';
 
 const Entree1 = props => {
   return (
-    <p>Image Here</p>
+    <img className="d-block w-100" src={Adobo} alt="adobo" />
   )
 }
 

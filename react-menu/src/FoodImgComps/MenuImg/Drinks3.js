@@ -1,8 +1,9 @@
 import React from 'react';
+import Sago from './../../Images/sgglm.jpg';
 
 const Drinks3 = props => {
   return (
-    <p>Image Here</p>
+    <img className="d-block w-100" src={Sago} alt='sago' />
   )
 }
 
