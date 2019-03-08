@@ -5,9 +5,7 @@ import Appetizer from './MenuOptions/Appetizer';
 import Dessert from './MenuOptions/Dessert';
 import Drinks from './MenuOptions/Drinks';
 import Entree from './MenuOptions/Entree';
-import App1Img from './FoodImgComps/MenuImg/Appetizer1';
-import App2Img from './FoodImgComps/MenuImg/Appetizer2';
-import App3Img from './FoodImgComps/MenuImg/Appetizer3';
+
 class App extends Component {
   constructor() {
     super();
@@ -23,7 +21,7 @@ class App extends Component {
             <Col>
               <Jumbotron className="bg-danger mt-3">
                 <h1 className="text-center text-white">
-                  The Menu
+                  Lupang Inihaw
                 </h1>
               </Jumbotron>
             </Col>
@@ -34,6 +32,7 @@ class App extends Component {
             </Col>
             <Col className="col-md-6 text-center text-primary">
               <Appetizer title={this.state.title[0]} />
+
             </Col>
           </Row>
           <Row>
