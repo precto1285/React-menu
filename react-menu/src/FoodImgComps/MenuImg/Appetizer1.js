@@ -4,7 +4,7 @@ import imageChc from './../../Images/chxblk.jpg';
 const Appetizer1 = props => {
   return (
     <div>
-      <img src={imageChc} alt="chich" />
+      <img className="d-block w-100" src={imageChc} alt="chich" />
     </div>
   )
 }
