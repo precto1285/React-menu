@@ -33,7 +33,7 @@ const appCarousel = props => {
         <div className="card-header">
           <p>Appetizer Images</p>
         </div>
-        <div className="card-body">
+        <div className="card-body bg-dark">
           <Appetizer1 />
           <Appetizer2 />
           <Appetizer3 />

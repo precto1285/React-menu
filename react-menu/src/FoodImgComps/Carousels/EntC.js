@@ -10,7 +10,7 @@ const EntreeCarousel = props => {
       <div className="card-header">
         <p>Entree Images</p>
       </div>
-      <div className="card-body">
+      <div className="card-body bg-dark">
         <Entree1 />
         <Entree2 />
         <Entree3 />

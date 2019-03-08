@@ -10,7 +10,7 @@ const DrinkCarousel = props => {
       <div className="card-header">
         <p>Drinks Images</p>
       </div>
-      <div className="card-body">
+      <div className="card-body bg-dark">
         <Drinks1 />
         <Drinks2 />
         <Drinks3 />

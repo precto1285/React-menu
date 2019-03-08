@@ -30,6 +30,7 @@ const Appetizer = props => {
                   <li>{appz.appetizers[2]}</li>
                 </ul> : null
             }
+
           </div>
           <div className="card-footer">
             <button onClick={clickHandler} className="btn btn-primary">Show</button>

@@ -5,7 +5,9 @@ import Appetizer from './MenuOptions/Appetizer';
 import Dessert from './MenuOptions/Dessert';
 import Drinks from './MenuOptions/Drinks';
 import Entree from './MenuOptions/Entree';
-
+import App1Img from './FoodImgComps/MenuImg/Appetizer1';
+import App2Img from './FoodImgComps/MenuImg/Appetizer2';
+import App3Img from './FoodImgComps/MenuImg/Appetizer3';
 class App extends Component {
   constructor() {
     super();
