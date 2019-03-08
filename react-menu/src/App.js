@@ -19,7 +19,7 @@ class App extends Component {
         <div className="container">
           <Row>
             <Col>
-              <Jumbotron className="bg-danger">
+              <Jumbotron className="bg-danger mt-3">
                 <h1 className="text-center text-white">
                   The Menu
                 </h1>
