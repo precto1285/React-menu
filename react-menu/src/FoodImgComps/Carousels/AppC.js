@@ -39,6 +39,7 @@ const appCarousel = props => {
           <Appetizer3 />
         </div>
         <div className="card-footer">
+          <p>Appetizer Items</p>
           <UncontrolledCarousel items={appItems} />
         </div>
       </Card>

@@ -1,8 +1,29 @@
 import React from 'react';
-import { Card } from 'reactstrap';
+import { Card, UncontrolledCarousel } from 'reactstrap';
 import Dessert1 from './../MenuImg/Dessert1';
 import Dessert2 from './../MenuImg/Dessert2';
 import Dessert3 from './../MenuImg/Dessert3';
+
+const appItems = [
+  {
+    src: './../../../Images/chxblk.jpg',
+    altText: 'Bibingka',
+    caption: 'Bibingka',
+    header: 'Desserts'
+  },
+  {
+    src: { Dessert2 },
+    altText: 'Turon',
+    caption: 'Turon',
+    header: 'Desserts'
+  },
+  {
+    src: { Dessert3 },
+    altText: 'Puto',
+    caption: 'Puto',
+    header: 'Desserts'
+  }
+];
 
 const DessertCarousel = props => {
   return (
@@ -17,6 +38,7 @@ const DessertCarousel = props => {
       </div>
       <div className='card-footer'>
         <p>Dessert Items</p>
+        <UncontrolledCarousel items={appItems} />
       </div>
     </Card>
   )

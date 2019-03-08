@@ -32,7 +32,6 @@ class App extends Component {
             </Col>
             <Col className="col-md-6 text-center text-primary">
               <Appetizer title={this.state.title[0]} />
-
             </Col>
           </Row>
           <Row>
