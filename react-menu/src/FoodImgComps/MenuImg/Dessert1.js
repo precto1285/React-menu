@@ -1,8 +1,9 @@
 import React from 'react';
+import Bibingka from './../../Images/bbngk.jpg';
 
 const Dessert1 = props => {
   return (
-    <p>Image Here</p>
+    <img className="d-block w-100" src={Bibingka} alt="bib" />
   )
 }
 

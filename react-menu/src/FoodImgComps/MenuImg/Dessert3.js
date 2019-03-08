@@ -1,8 +1,9 @@
 import React from 'react';
+import Puto from './../../Images/puto.jpg';
 
 const Dessert3 = props => {
   return (
-    <p>Image Here</p>
+    <img className="d-block w-100" src={Puto} alt="bib" />
   )
 }
 
