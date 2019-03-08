@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Row, Col } from 'reactstrap';
-import Appetizer1 from './../FoodImgComps/Appetizer1';
+import AppImg from '../FoodImgComps/Carousels/AppC';
 
 const Appetizer = props => {
   const [appz, appzSet] = useState({
@@ -36,7 +36,7 @@ const Appetizer = props => {
           </div>
         </Card>
       </Col>
-      <Col><Appetizer1 /></Col>
+      <Col><AppImg /></Col>
     </Row>
   )
 }

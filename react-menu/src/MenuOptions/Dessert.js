@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Row, Col } from 'reactstrap';
-import Dessert1 from './../FoodImgComps/Dessert1';
+import DesImg from '../FoodImgComps/Carousels/DesC';
 
 const Dessert = props => {
   const [dzrt, setDzrt] = useState({
@@ -37,7 +37,7 @@ const Dessert = props => {
         </div>
       </Card>
     </Col>
-      <Col><Dessert1 /></Col>
+      <Col><DesImg /></Col>
     </Row>
 
   )

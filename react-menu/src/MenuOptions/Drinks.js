@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Row, Col } from 'reactstrap';
-import Drinks1 from './../FoodImgComps/Drinks1';
+import DriImg from '../FoodImgComps/Carousels/DriC';
 
 const Drinks = props => {
 
@@ -37,7 +37,7 @@ const Drinks = props => {
           </div>
         </Card>
       </Col>
-      <Col><Drinks1 /></Col>
+      <Col><DriImg /></Col>
     </Row>
   )
 }
